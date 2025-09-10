@@ -1,50 +1,49 @@
-# Vite & HeroUI Template
+# 💬 Chat App with File Upload – alu-test-front 
 
-This is a template for creating applications using Vite and HeroUI (v2).
-
-[Try it on CodeSandbox](https://githubbox.com/frontio-ai/vite-template)
-
-## Technologies Used
-
-- [Vite](https://vitejs.dev/guide/)
-- [HeroUI](https://heroui.com)
-- [Tailwind CSS](https://tailwindcss.com)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org)
-- [Framer Motion](https://www.framer.com/motion)
-
-## How to Use
-
-To clone the project, run the following command:
-
+This project is a modern chat application built with **React**, **Vite**, **TypeScript**, and **HeroUI**, supporting **real-time messaging** and **file uploads** (.xlsx, .csv, .xls) integrated directly into the conversation. --- ## 🚀 Getting Started ### 1. Clone the repository
 ```bash
-git clone https://github.com/frontio-ai/vite-template.git
+git clone https://github.com/your-username/alu-test-front.git
+cd alu-test-front
 ```
 
-### Install dependencies
-
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-### Run the development server
+### 3. Run the development server
 
 ```bash
 npm run dev
 ```
 
-### Setup pnpm (optional)
+- 🔧 Technologies Used 
+- ⚛️ React 18 + TypeScript 
+- ⚡ Vite 
+- 🎨 TailwindCSS 
+- 🎛 HeroUI (@heroui/react)
+- 🔌 Socket.IO
+- 🧹 ESLint + Prettier
 
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
+### 🧠 Solution Summary 
+- ✅ Real-time chat powered by socket.io-client
+- ✅ Modal file upload component (UploadFile)
+- ✅ Drag & drop + file format validation
+- ✅ File preview before sending
+- ✅ File metadata is posted in the chat as a message
 
-```bash
-public-hoist-pattern[]=*@heroui/*
-```
+### 💬 Example message after uploading a file:
+📎 File uploaded: report.xlsx (82 KB)
+    
+### ⚠️ Known Limitations / Next Steps
 
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
+- ❌ Files are not actually uploaded to a backend (only file metadata is displayed)
+- 🧩 Uploaded files are not stored or downloadable
+- 🔗 Future upgrade: use FormData to upload files and display download links
+- 📁 Add support for PDFs, images, and other file types
+- ⏳ Add upload progress or loading state (UI enhancement)
 
-## License
+### 👨‍💻 Author
 
-Licensed under the [MIT license](https://github.com/frontio-ai/vite-template/blob/main/LICENSE).
+Built with ❤️ by Eng. Tony
