@@ -49,6 +49,7 @@ function handleFileUpload(
       }
     }
   )
+  
 }
 
 function MessageRow({ msg, isMine, showAvatar }: MessageRowProps) {

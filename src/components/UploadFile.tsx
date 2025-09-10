@@ -150,6 +150,8 @@ function UploadFile({ onFileUpload }: UploadFileProps) {
   const handleSend = () => {
     if (!file) return
 
+    console.log(file)
+
     onFileUpload?.(file)
     setFile(null)
     onOpenChange(false)
